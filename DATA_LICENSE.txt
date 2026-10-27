@@ -10,7 +10,17 @@ Source: https://doi.org/10.17605/OSF.IO/Z3WGQ
 Associated publication: https://doi.org/10.1609/aies.v9i3.43257
 Credit: the dataset creators identified in the OSF record
 
-Please cite the archival OSF dataset and, in scholarly work, the associated publication. The scholarly paper citation is a request, not an additional condition of CC BY 4.0.
+ACADEMIC CITATION
+
+If you use or build upon the datasets provided in this repository, please cite our associated scientific publication:
+
+https://doi.org/10.1609/aies.v9i3.43257
+
+For reproducibility and data provenance, we also encourage citing the archived dataset:
+
+https://doi.org/10.17605/OSF.IO/Z3WGQ
+
+These academic citation requests are separate from the legal attribution requirements of CC BY 4.0 and do not introduce additional licensing conditions.
 
 EXCEPTIONS:
 - Source code is covered by MIT; see LICENSE.
