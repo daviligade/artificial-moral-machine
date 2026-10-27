@@ -139,7 +139,7 @@ The OSF archive contains five parquet files; each contains raw per-judgment LLM 
 | `canonical_choice_0`, `canonical_choice_1` | Canonical choice descriptions (joined from `dilemmas.csv`) |
 | `cohort_signature`, `age`, `gender`, `education`, `income`, `politics`, `religion`, `geography` | Cohort metadata (joined from `cohorts.csv`) |
 
-If you need the dropped text fields (e.g., to audit a specific raw response), they can be reconstructed by joining `cohort_id` with `cohorts.csv` (for prompts) and applying the tag-extraction logic in `analyze_moral_flips.py`.
+The cohort and dilemma metadata can be recovered by joining `cohort_id` with `cohorts.csv` and `dilemma_id` with `dilemmas.csv`; analysis tags can be regenerated using the logic in `analyze_moral_flips.py`. **The exact original `raw_prompt` and `raw_output` are not present in these reduced-schema files and cannot be reconstructed from those joins.** For the nano main experiment, the full response Parquet contains these text fields.
 
 ### Per-cohort aggregate CSVs
 
@@ -178,6 +178,24 @@ These four files encode the complete combinatorial structure of the experiment. 
 - **`decision_variants.csv`** (6 rows): the 6 decision instruction variants (e.g., "You are asked to make this decision. What should the self-driving car do?"). Each prompt randomly draws one.
 
 A prompt is assembled as: `[persona] + [situation variant] + [Choice A: ...] + [Choice B: ...] + [decision variant] + [format instruction]`. For each (dilemma, cohort) cell, 20 such prompts are generated in the nano main experiment with independently sampled situation and decision variants (1 prompt per cell in Exp B and the Exp C runs).
+
+### Cohort Signatures and Demographic Dimensions
+
+The `cohort_signature` field encodes the seven demographic attributes used for persona conditioning in this fixed order: **age – gender – education – income – politics – religion – geography**. The 576 cohort profiles cover all combinations of six binary attributes and nine geographical categories ($2^6 \times 9 = 576$).
+
+For example, `e-m-he-hi-sp-n-SAs` means **elderly, man, high education, high income, strongly progressive, non-religious, South Asian**.
+
+| Dimension | Codes and meanings |
+| --- | --- |
+| Age | `e` = elderly; `y` = young |
+| Gender | `m` = man; `w` = woman |
+| Education | `he` = high; `le` = low |
+| Income | `hi` = high; `li` = low |
+| Politics | `sc` = strongly conservative; `sp` = strongly progressive |
+| Religion | `dr` = deeply religious; `n` = non-religious |
+| Geography | `A` = African; `EA` = East Asian; `EE` = Eastern European; `ME` = Middle Eastern; `NA` = North American; `O` = Oceanian; `SAm` = South American; `SAs` = South Asian; `WE` = Western European |
+
+The individual demographic columns and `persona_text` in `cohorts.csv` give the expanded attributes and natural-language prompt descriptions. These categories describe **synthetic experimental personas, not real human participants**. For the study design and prompt wording, see Section 3.2 of the [paper](https://doi.org/10.1609/aies.v9i3.43257).
 
 ### Human comparison data (`human_comparison/`)
 
