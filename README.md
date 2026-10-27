@@ -239,7 +239,7 @@ Steps 3 and 4 are the headline verification: they confirm every numeric claim in
 
 ## Citation
 
-If you use the methods, research code, or findings, please cite the published article:
+If you use or build upon the datasets, code, or research materials provided in this repository, please cite our associated scientific publication:
 
 > Liga, D., Yu, L., Slavkovik, M., Touileb, S., Liao, B., & van der Torre, L. (2026). **The Artificial Moral Machine: Do LLMs Mirror Human Moral Diversity or Merely Caricature It?** *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society*, **9**(3), 1678–1688. https://doi.org/10.1609/aies.v9i3.43257
 
@@ -261,13 +261,15 @@ If you use the methods, research code, or findings, please cite the published ar
 
 You can also download this reference as [`paper.bib`](paper.bib) and cite it in LaTeX using `\cite{liga2026artificial}`.
 
-If you reuse the dataset, please **also cite its archival OSF record**:
+For reproducibility and data provenance, we also encourage citing the archived dataset:
 
-> **The Artificial Moral Machine — research dataset.** Open Science Framework. https://doi.org/10.17605/OSF.IO/Z3WGQ
+**OSF Dataset DOI:** https://doi.org/10.17605/OSF.IO/Z3WGQ
 
-For the dataset's authoritative author, title, and version metadata, consult the [OSF record](https://doi.org/10.17605/OSF.IO/Z3WGQ); the short dataset citation above is a locator, not a verified complete bibliographic record.
+For the dataset's authoritative metadata, consult the [OSF record](https://doi.org/10.17605/OSF.IO/Z3WGQ).
 
-GitHub's **Cite this repository** feature uses [`CITATION.cff`](CITATION.cff) to identify the paper as the preferred citation. These scholarly citation requests are distinct from the legal requirements of the respective licenses.
+GitHub's **Cite this repository** feature uses [`CITATION.cff`](CITATION.cff) to identify the paper as the preferred citation.
+
+These academic citation requests are separate from the legal attribution and notice requirements of the applicable licenses.
 
 ## License
 
