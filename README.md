@@ -1,6 +1,6 @@
 # The Artificial Moral Machine
 
-This repository contains research code, small-to-medium datasets, analysis outputs, and supplementary materials for the published paper. **The complete archival dataset, including the two large Parquet files, is hosted on OSF**: https://doi.org/10.17605/OSF.IO/Z3WGQ. GitHub is a companion copy, not a replacement for the OSF archive.
+This repository contains research code, small-to-medium datasets, analysis outputs, and supplementary materials for the published paper. **The complete archival dataset, including the two large Parquet files, is hosted on OSF**: https://doi.org/10.17605/OSF.IO/Z3WGQ. GitHub is a companion copy, not a replacement for the OSF archive. *Dataset access*: https://huggingface.co/datasets/davideliga/artificial-moral-machine
 
 **"The Artificial Moral Machine: Do LLMs Mirror Human Moral Diversity or Merely Caricature It?"**
 
