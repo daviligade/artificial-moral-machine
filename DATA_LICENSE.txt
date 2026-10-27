@@ -1,0 +1,19 @@
+DATASET LICENSING NOTICE — CC BY 4.0
+
+Unless explicitly stated otherwise, original datasets in the data/ directory of this repository are offered under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution information:
+Title: The Artificial Moral Machine — research dataset
+Source: https://doi.org/10.17605/OSF.IO/Z3WGQ
+Associated publication: https://doi.org/10.1609/aies.v9i3.43257
+Credit: the dataset creators identified in the OSF record
+
+Please cite the archival OSF dataset and, in scholarly work, the associated publication. The scholarly paper citation is a request, not an additional condition of CC BY 4.0.
+
+EXCEPTIONS:
+- Source code is covered by MIT; see LICENSE.
+- data/human_comparison/summary_overall_preferences.csv is third-party material sourced from https://github.com/kztakemoto/mmllm. The upstream README describes that project as MIT-licensed, but the licensing provenance of this individual dataset has not been independently confirmed. This file is excluded from our CC BY 4.0 grant. Preserve the upstream attribution and comply with any applicable upstream terms.
+- Any other third-party material is governed by its own terms, where applicable.
+

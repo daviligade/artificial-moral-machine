@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: 'If you use this repository''s research code, please cite the associated paper. If you reuse
+  the dataset, also cite the OSF dataset DOI: 10.17605/OSF.IO/Z3WGQ.'
+title: 'The Artificial Moral Machine: research code and reproducibility materials'
+type: software
+authors:
+- family-names: Liga
+  given-names: Davide
+- family-names: Yu
+  given-names: Liuwen
+- family-names: Slavkovik
+  given-names: Marija
+- family-names: Touileb
+  given-names: Samia
+- family-names: Liao
+  given-names: Beishui
+- family-names: van der Torre
+  given-names: Leendert
+preferred-citation:
+  type: conference-paper
+  title: 'The Artificial Moral Machine: Do LLMs Mirror Human Moral Diversity or Merely Caricature It?'
+  authors:
+  - family-names: Liga
+    given-names: Davide
+  - family-names: Yu
+    given-names: Liuwen
+  - family-names: Slavkovik
+    given-names: Marija
+  - family-names: Touileb
+    given-names: Samia
+  - family-names: Liao
+    given-names: Beishui
+  - family-names: van der Torre
+    given-names: Leendert
+  doi: 10.1609/aies.v9i3.43257
+  year: 2026
+  collection-title: Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society
+  collection-type: proceedings
+  volume: 9
+  issue: 3
+  start: 1678
+  end: 1688
+  url: https://doi.org/10.1609/aies.v9i3.43257
