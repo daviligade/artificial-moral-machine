@@ -21,8 +21,19 @@ Download each file from OSF, put it in the local `data/` directory with **exactl
 
 Scripts that only use the released CSV aggregate files may work without either large Parquet file. Regenerating aggregates from raw main-experiment responses and the moral-flips analysis requires the full main Parquet file.
 
-**Archive of record:** https://doi.org/10.17605/OSF.IO/Z3WGQ  
-**Associated publication:** https://doi.org/10.1609/aies.v9i3.43257
+
+### Hugging Face Datasets
+
+The research datasets are also available on [Hugging Face](https://huggingface.co/datasets/davideliga/artificial-moral-machine), where they can be browsed and loaded directly using the Python `datasets` library.
+
+Hugging Face provides an alternative distribution format for convenient programmatic access. The OSF repository remains the authoritative archival source.
+
+**Dataset access:** https://huggingface.co/datasets/davideliga/artificial-moral-machine
+
+**Archival DOI:** https://doi.org/10.17605/OSF.IO/Z3WGQ
+
+**Associated publication:** For academic citation, please cite the associated scientific publication: https://doi.org/10.1609/aies.v9i3.43257
+
 
 ## Repository Structure
 
